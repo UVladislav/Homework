@@ -133,16 +133,44 @@ public class Lesson2 {
     // число n (может быть положительным, или отрицательным), при этом метод должен
     // сместить все элементы массива на n позиций. Для усложнения задачи нельзя
     // пользоваться вспомогательными массивами.
-    public static void shiftingN (int[] shiftArr) {
+    public static void shiftingN (int[] shiftArr, int value) {
         System.out.println();
         System.out.println("dz 2.7:");
         System.out.println("original: " + Arrays.toString(shiftArr));
-        Scanner scanner = new Scanner(System.in);
+        /* Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        for (int i=0; i<shiftArr.length; i++) {
+        for (int i=0; i < shiftArr.length; i++) {
             shiftArr[i] = shiftArr[i+n];
-            System.out.println("new: " + Arrays.toString(shiftArr));
+            //System.out.println("new: " + Arrays.toString(shiftArr));
         }
-        //System.out.println("new: " + Arrays.toString(shiftArr));
+        System.out.println("new: " + Arrays.toString(shiftArr)); */
+
+        boolean flag;
+        if (value < 0) {
+            flag = true;
+            value = -value;
+        } else {
+            flag = false;
+        }
+        int lastindex = shiftArr.length - 1;
+        for (int i=0; i < value; i++) {
+            int temp = 0;
+//            if (flag) {
+//                temp = shiftArr[lastindex];
+//            }
+            for (int j=0; j < lastindex; j++) {
+                if (flag) {
+                    shiftArr[j] = shiftArr[j+1];
+                } else {
+                    shiftArr[lastindex - j] = shiftArr[lastindex - j -1];
+                }
+            }
+            if (flag) {
+                shiftArr[lastindex] = temp;
+            } else {
+                shiftArr[0] = temp;
+            }
+        }
+        System.out.println("new shifted: " + Arrays.toString(shiftArr));
     }
 }

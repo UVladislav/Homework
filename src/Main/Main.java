@@ -26,6 +26,6 @@ public class Main {
         Lesson2.minMax(arr6_2);
         int[] arr7 = new int[12];
         System.out.println(Lesson2.checkBalance(arr7));
-        Lesson2.shiftingN(arr7);
+        Lesson2.shiftingN(arr7, 3);
     }
 }
