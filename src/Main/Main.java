@@ -15,7 +15,7 @@ public class Main {
 
         System.out.println("Lesson 2 Homeworks:");
 
-        Lesson2.invMass();
+       /* Lesson2.invMass();
         System.out.println();
         int[] array8 = new int[8];
         Lesson2.arr8(array8);
@@ -26,6 +26,9 @@ public class Main {
         Lesson2.minMax(arr6_2);
         int[] arr7 = new int[12];
         System.out.println(Lesson2.checkBalance(arr7));
-        Lesson2.shiftingN(arr7, 3);
+        Lesson2.shiftingN(arr7, 3); */
+
+        System.out.println("Lesson 3 Homeworks:");
+
     }
 }
