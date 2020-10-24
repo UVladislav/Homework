@@ -27,7 +27,7 @@ public class Lesson3 {
        int index = value.nextInt(words.length - 1);
        Boolean isGuess = false;
        char[] wordField = {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#'};
-       System.out.println("Я загадало слово: " + words[index]);
+       //System.out.println("Я загадало слово: " + words[index]);
 
        Scanner input = new Scanner(System.in);
        for (char letter: wordField) {
@@ -53,8 +53,8 @@ public class Lesson3 {
 
    }
     public static boolean compareWords(String word, String randomWord, char[] wordField) {
-        Integer count = 0;
-        for(Integer i = 0; i < word.length(); i++) {
+        int count = 0;
+        for(int i = 0; i < word.length(); i++) {
             if (i == randomWord.length()) {
                 break;
             }
