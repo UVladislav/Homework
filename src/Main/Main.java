@@ -2,6 +2,7 @@ package Main;
 
 import Lesson1.Lesson1;
 import Lesson2.Lesson2;
+import Lesson3.Lesson3;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +14,7 @@ public class Main {
         Lesson1.yourName("Влад");
         System.out.println(); */
 
-        System.out.println("Lesson 2 Homeworks:");
+        //System.out.println("Lesson 2 Homeworks:");
 
        /* Lesson2.invMass();
         System.out.println();
@@ -30,5 +31,9 @@ public class Main {
 
         System.out.println("Lesson 3 Homeworks:");
 
+        String[] words =  {"apple", "orange", "lemon", "banana", "apricot", "avocado", "broccoli",
+                "carrot", "cherry", "garlic", "grape", "melon", "leak", "kiwi", "mango", "mushroom",
+                "nut", "olive", "pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
+        Lesson3.guessWord(words);
     }
 }
